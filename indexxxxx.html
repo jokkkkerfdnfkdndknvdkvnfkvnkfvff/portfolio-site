@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Frontend Dasturchi</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* === Navbar === */
+    nav {
+      background-color: #1e1e2f;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #00bcd4, #2196f3);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header img {
+      max-width: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#about">Men haqimda</a></li>
+      <li><a href="#skills">Texnologiyalar</a></li>
+      <li><a href="#projects">Loyihalar</a></li>
+      <li><a href="#contact">Bog‘lanish</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Salom, men Frontend Dasturchiman</h1>
+    <p>Interfeyslar va zamonaviy veb-saytlar yarataman</p>
+    <img src="https://avatars.githubusercontent.com/u/9919?s=280&v=4" alt="Portfolio Avatar" />
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>🧑‍💻 Men haqimda</h2>
+    <p>Men HTML, CSS, JavaScript va Git kabi texnologiyalar bilan ishlaydigan yangi boshlovchi frontend dasturchiman. Foydalanuvchi uchun qulay interfeyslar yaratish — mening asosiy maqsadim.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>🛠 Texnologiyalar</h2>
+    <ul>
+      <li>HTML5, CSS3, JavaScript</li>
+      <li>Responsive dizayn</li>
+      <li>Git & GitHub</li>
+      <li>Bootstrap, TailwindCSS</li>
+      <li>ReactJS (asosiy tushunchalar)</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>📂 Loyihalar</h2>
+    <p><strong>Portfolio Sayt:</strong> Ushbu sayt GitHub Pages orqali nashr etilgan.</p>
+    <p><a href="https://jokkkkerfdnfkdndknvdkvnfkvnkfvff.github.io/portfolio-site/" target="_blank">Saytga o'tish</a></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>📫 Bog‘lanish</h2>
+    <p><strong>Email:</strong> sizningemail@gmail.com</p>
+    <p><strong>Telegram:</strong> <a href="https://t.me/sizningtelegram" target="_blank">@sizningtelegram</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/jokkkkerfdnfkdndknvdkvnfkvnkfvff" target="_blank">Profilim</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Portfolio. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+</body>
+</html>
